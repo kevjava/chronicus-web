@@ -29,6 +29,9 @@
 	}
 	function auth_fail(){
 	}
+	function submit_form(){
+		checkAuth($('#username').val(), $('#password').val(), auth_success, auth_fail);
+	}
 
 </script>
   
@@ -54,7 +57,7 @@
 							<label for="password">Password</label>
 							<input type="password" class="form-control" id="password" placeholder="Password">
 						</div>
-						<button type="button" class="btn btn-primary" onclick="javascript:checkAuth($('#username').val(), $('#password').val());"> Login </button>
+						<button type="button" class="btn btn-primary" onclick="javascript:submit_form();"> Login </button>
 					</div>
 				</div>
    
