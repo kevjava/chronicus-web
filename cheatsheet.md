@@ -10,6 +10,9 @@
 ### JQuery functions
  * Once you have targeted the elements you want, you use functions to manipulate them.
  * You can use the `.addClass("`*classname*`")` function to add a CSS class.
+    * For example, use `$("button").addClass("danger")` to add the `danger` class to all buttons.`
  * You can use the `.val()` function to retrieve an element's value (text).
- * For example, use `$("#firstname").val()` to get the value of the field with the id of `firstname`.
- * For example, use `$("button").addClass("danger")` to add the `danger` class to all buttons.`
+    * For example, use `$("#firstname").val()` to get the value of the field with the id of `firstname`.
+ * You can use the `.attr(name, value)` function to add an attribute to an element.
+    * For example, use `$("#loginbtn").attr("disabled", "disabled")` to add the `disabled="disabled"` attribute to the button with id `loginbtn` on the fly.
+ * You can use the `.removeAttr(name)` to remove the attribute.
