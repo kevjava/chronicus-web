@@ -2,15 +2,19 @@
  * Chronicus server API.
  */
 
-function doAlert() {
-    alert('Hi.');
-}
 
-function checkAuth(username, password) {
+/**
+ * checkAuth - Checks authentication with the server.  
+ *
+ * username - The username for the user to be logged in.
+ * password - The password for the user to be logged in.
+ * authSuccess - The callback function to be called if login succeeds.
+ * authFail - The callback function to be called if login fails.
+ */
+function checkAuth(username, password, authSuccess, authFail) {
     if ("h4x0r" === username && "l33t" === password) {
-        alert("Welcome.");
-        window.location = 'index.html';
+        authSuccess();
     } else {
-        alert("Sorry, try again.");
+        authFail();
     }
 }

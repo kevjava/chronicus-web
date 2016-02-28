@@ -26,9 +26,13 @@
 <!-- Javascript stuffs -->
 <script type="text/javascript">
 	function auth_success(){
+        console.log("It worked.");
 	}
+
 	function auth_fail(){
+        console.log("Boo.");
 	}
+
 	function submit_form(){
 		checkAuth($('#username').val(), $('#password').val(), auth_success, auth_fail);
 	}
